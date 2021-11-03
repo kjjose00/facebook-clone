@@ -1,38 +1,541 @@
-.App {
-  text-align: center;
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    background-color:white;
+    position: fixed;
+    
+    z-index: 2;
+}
+body{
+    
+    background-color: #f0f2f5;
+}
+.navbar_f_logo{
+    font-size: 40px;
+    color: blue;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+.navbar_section_one{
+   
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
+.navbar_searchbox{
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #f0f2f5;
+    height:40px;
+    border-radius: 18px;
+    width: 250px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: grey;
+    padding: 0 15px;
+    
+}
+.navbar_searchbox:focus{
+    text-align: left;
+}
+.navbar_search_logo{
+    margin-top: 15px;
+    margin-left: 65px;
+    font-size: 20px;
+    position: absolute;
+    
+}
+.navbar_section_two{
+    width: 50%;
+    background-color:white;
+    height:55px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar_logo{
+   
+    font-size: 30px;
+    color:chartreuse;
+   
+   
+    
+    
+    cursor: pointer;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar_logo:link{
+    border-bottom:5px solid red;
+}
+.profile_pict{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+}
+.navbar_section_three{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+.icon_nav_3{
+   
+    
+    margin-top: 8px;
+    margin-left: 6px;
+    font-size: 20px;
+    position: absolute;
+    
+}
+.span_nav_3{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    position: fixed;
+    
+  
+   left: 0;
+   overflow-y: scroll;
+   
+    
+    
+    
+    width: 25%;
+    height: 800px;
+   
+   
+   
+  
+  
+   
+   
+    
+    
+   
+   
+  
+    padding-top: 56px;
+    
+}
+.sidebar:hover{
+    position: absolute;
+    overflow: hidden;
+    
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar_pict{
+    vertical-align:middle;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+    
+    margin-left:10px;
+   
+}
+.sidebar_profile{
+    display: flex;
+    align-items: center;
+}
+.name_sidebar{
+    padding-left: 5px;
+    padding-top: 15px;
+}
+.sidemenu{
+    display: flex;
+   
+    width:100%;
+    height: 25px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+  
+    
+}
+.side_icon{
+    
+    font-size:25px;
+    padding-top: 15px;
+    padding-right: 5px;
+   
+   
+    color: blueviolet;
+   
+}
+.sidemenu:hover{
+    color: blue;
+}
+.story{
+    
+    width: 20%;
+    height: 210px;
+    background-color: white;
+    position: relative;
+    top: 70px;
+    border-radius: 15px;
+    left: 5px;
+    text-align: center;
+    
+   
+}
+.middlebar{
+   
+    width: 50%;
+    height:auto;
+    
+    position: relative;
+    left: 25%;
+   
+  
+    padding-bottom: 50px;
+    
+  
+    
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.middlecontent{
+    display:flex;
+    width:100%;
+    height:auto;
+  
+  
+    
+   
 
-.App-link {
-  color: #61dafb;
 }
+.story_image{
+    width: 130px;
+    height: 150px;
+    border-radius: 15px;
+    padding: 2px;
+    
+}
+.story_add{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:blue;
+    position:absolute;
+    left: 55px;
+    bottom: 45px;
+    font-size: 20px;
+    color: white;
+   
+}
+.story_friends{
+    width: 20%;
+    height:210px ;
+    background-color: yellow;
+    position: relative;
+    top: 70px;
+    left: 10px;
+    right: 5px;
+    margin: 5px;
+ 
+    background-size: cover;
+    border-radius: 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+   
+   
+}
+.storys{
+    display: flex;
+}
+.storyimage{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 4px solid blue;
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+.arrow{
+    position: relative;
+    top: 150px;
+    left:-15px;
+    
+    color:grey;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    background-color: white;
+    
+}
+.arrow:hover{
+    color: red;
+    background-color: yellow;
+    
+}
+.whatmind{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 65%;
+    height: 130px;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+.postyourmind{
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+    
+    background-color: #f0f2f5;
+    height:40px;
+    border-radius: 18px;
+    width: 350px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: grey;
+    padding: 0 15px;
+    
+}
+.profilepict{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+.divider{
+    position: relative;
+    left: 5px;
+    width:95% ;
+    color:#f0f2f5 ;
+}
+.live{
+    color:red;
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+    top: 5px;
+
+}
+.photo{
+    color: green;
+    font-size: 30px;
+    position: relative;
+    left: 100px;
+    top: 5px;
+}
+.span1{
+    position: relative;
+    left: 60px;
+}
+.span2{
+    position: relative;
+    left: 120px;
+}
+.posts{
+    width: 65%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-content:space-evenly;
+    padding-bottom: 120px;
+   
+}
+.post{
+    width: 100%;
+    
+    box-shadow: -2px -2px solid grey;
+    height: 550px;
+    background-color: white;
+    position: relative;
+    left: 100px;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+   
+    padding-top: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.arrange{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+
+}
+.property{
+    width: 100% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.reply{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:110px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 30px;
+}
+.messenger{
+    width: 25%;
+    height: 100vh;
+   
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.messenger_friends{
+  
+    display: flex;
+    white-space: pre;
+    left: 10px;
+
+   
+
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+    
+    margin: 10px;
+    
+
+    
+}
+.chatbox{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 200px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+.chathead{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid darkgray;
+    
+    justify-content: space-between;
+    width:400px ;
+    height: 50px;
+    
+}
+.chathead1{
+    display: flex;
+    align-items: center;
+    white-space: pre;
+    width: 50%;
+    height: 50px;
+   
+    padding-left: 5px;
+}
+.chathead2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+}
+.chatheadlogo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}
+.chatheadlogo:hover{
+    background-color: darkgray;
+}
+.chatfooter{
+    position: relative;
+    width: 385px;
+    height: 50px;
+    
+    top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 10px;
+    left: 0;
+    right: 0;
+    border-top: 3px solid grey;
+
+}
+.postyourmessage{
+    width: 300px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: darkgray;
+    outline: none;
+    padding: 0 15px;
+}
+.chatfooterlogo{
+    font-size: 18px;
+   
+}
+.chatbody{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color:white;
+    left: 0%;
+    top: 53px;
+    overflow-y: scroll;
+  
+}
+.chatms{
+    width: 220px;
+    height: auto;
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 150px;
+    border-radius: 20px;
+    padding-left: 10px;
+
+}
+.chatmr{
+    width:220px ;
+    height: auto;
+    background-color: grey;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin: 10px;
 }
